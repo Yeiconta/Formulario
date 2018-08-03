@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Formulario"
+             x:Class="Formulario.MainPage">
+
+    <StackLayout Margin="0,50">
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Nombre"
+                   VerticalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   FontSize="18">                
+            </Label>
+            <Entry x:Name="UserName"
+                   Placeholder="Nombre"
+                   Keyboard="Text"
+                   HorizontalOptions="FillAndExpand">                
+            </Entry>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Apellido"
+                   VerticalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   FontSize="18">                
+            </Label>
+            <Entry x:Name="UserLastName"
+                   Placeholder="Apellido"
+                   Keyboard="Text"
+                   HorizontalOptions="FillAndExpand">                
+            </Entry>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="e-mail"
+                   VerticalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   FontSize="18">                
+            </Label>
+            <Entry x:Name="UserEmail"
+                   Placeholder="e-mail"
+                   Keyboard="E-mail"
+                   HorizontalOptions="FillAndExpand">                
+            </Entry>            
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Telefono"
+                   VerticalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   FontSize="18">                
+            </Label>
+            <Entry x:Name="UserCelular"
+                   Placeholder="Nombre"
+                   Keyboard="Telephone"
+                   HorizontalOptions="FillAndExpand">                
+            </Entry>                   
+        </StackLayout>
+        <Button x:Name="ClienteBtF"
+                Text="Continuar"
+                BorderRadius="10"
+                BorderWidth="1"
+                BorderColor="Black"
+                TextColor="White"
+                Margin="30,0,30,0"
+                BackgroundColor="Navy"
+                Clicked="Continue_Tapped">            
+        </Button>       
+    </StackLayout>
+</ContentPage>
